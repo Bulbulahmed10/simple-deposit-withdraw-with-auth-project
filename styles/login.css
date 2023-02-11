@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../images/sarah-dorweiler-x2Tmfd1-SgA-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+h1{
+   text-align: center;
+   margin-top: 50px;
+   font-weight: 900;
+   font-size: 40px;
+   color: #596549;
+   letter-spacing: 1px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    margin-left: 500px;
+    position: relative;
+}
+
+form input[type="email"], input[type="password"], input[type="text"]{
+    padding: 15px;
+    width: 400px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+form input[type="submit"] {
+    padding: 10px 30px;
+    cursor: pointer;
+    border: 1px solid #26340D;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #596549;
+    color: #fff;
+    
+}
+
+h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #384C1F;
+}
+
+.errorMess{
+    margin: 3px;
+    visibility: hidden;
+    color: red;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.show-hide{
+    position: absolute;
+   margin-top: 50px;
+   margin-left: 320px;
+   cursor: pointer;
+   width: 36px;
+   padding: 5px;
+}
+
+#viewImage{
+    display: none;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 320px;
+    cursor: pointer;
+    width: 36px;
+    padding: 5px;
+}
