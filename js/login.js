@@ -62,7 +62,7 @@ document.getElementById("submit").addEventListener("click", (e) => {
 
   if (inputEmail.value === emailAddress && inputPassword.value === password) {
     document.location.href =
-    'http://127.0.0.1:5500/Baap%20er%20bank%20dom%20project/index.html';
+    'http://127.0.0.1:5501/home.html';
     inputEmail.value = "";
     inputPassword.value = "";
   }
