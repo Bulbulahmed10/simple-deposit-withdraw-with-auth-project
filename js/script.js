@@ -21,7 +21,9 @@ document.getElementById("deposit-button").addEventListener("click", () => {
     balanceOutPut.innerText = `${defaultBalance}`;
     depositInput.value = "";
   } else {
-    console.log("input required");
+    document.getElementById("depositReqWarning").innerText =
+      "Please enter the amount";
+    document.getElementById("depositReqWarning").style.visibility = "visible";
   }
 });
 
@@ -33,7 +35,7 @@ document.getElementById("withdraw-button").addEventListener("click", () => {
 
   if (withdrawInput.value) {
     if (parseFloat(balanceOutPut.innerText) < parseFloat(withdrawInput.value)) {
-      document.getElementById("withdrawWarning").style.visibility = "visible";
+      document.getElementById("withdrawReqWarning").style.visibility = "visible";
     } else {
       balanceOutPut.innerText =
         parseFloat(balanceOutPut.innerText) - parseFloat(withdrawInput.value);
@@ -49,8 +51,8 @@ document.getElementById("withdraw-button").addEventListener("click", () => {
 
     withdrawInput.value = "";
   } else {
-    document.getElementById("withdrawWarning").innerText =
+    document.getElementById("withdrawReqWarning").innerText =
       "Please enter the amount";
-    document.getElementById("withdrawWarning").style.visibility = "visible";
+    document.getElementById("withdrawReqWarning").style.visibility = "visible";
   }
 });
